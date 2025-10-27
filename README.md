@@ -1,4 +1,4 @@
-# pnwmaa2026
+# PNWMAA 20226 at Linfield University
 
-A webpage for the Pacific Northwest Regional Meeting of the Mathematical Association of America
-At Linfield University in April, 2026
+This webpage provides information about the Pacific Northwest Regional Meeting of the Mathematical Association of America, and associated activities, 
+at Linfield University in April of 2026
