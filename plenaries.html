@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -220,6 +223,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -227,6 +293,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -270,16 +346,134 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><img src="maalogo.png" height="40" />
-Plenary Speakers and Events</h1>
+<h1 class="title toc-ignore"><img src="images/maalogo.png"
+height="40" /> Plenary Speakers and Events</h1>
 
 </div>
 
 
-<p>Details coming soon.</p>
+<!--
+<div style="display: flex;">
+  <div style="width: 48%; margin-right: 2%;">
+    <img src="images/steve_butler.jpg" alt="Steve Butler" height = "120">
+  </div>
+  <div style="width: 48%;">
+    <img src = "images/PEHarris2023-004-scaled.jpg" height="120">
+  </div>
+</div>
+
+-->
+<div id="schedule" class="section level1">
+<h1>Schedule</h1>
+<div id="friday-evening" class="section level2">
+<h2>Friday Evening</h2>
+<div id="every-game-im-shufflin-shufflin-dr.-steve-butler"
+class="section level3">
+<h3><em>Every Game I’m Shufflin’, Shufflin’</em>, Dr. Steve Butler</h3>
+<blockquote>
+<p>Shuffling is a well-known aspect of gameplay to help make the decks
+“sufficiently random” to make the game interesting. Shuffling is also a
+source of mathematical exploration where shuffles are thought of as
+permutations of the cards. In this talk, we will take some tools of
+mathematics, modular arithmetic, and binary numbers, and show how we can
+apply these to shuffling, and in particular, some simple-to-learn
+mathematically-based card tricks, which will be performed live. Along
+the way, we will also learn why we should never work with jokers.</p>
+</blockquote>
+</div>
+</div>
+<div id="saturday-morning" class="section level2">
+<h2>Saturday Morning</h2>
+<div
+id="multiplex-juggling-sequences-and-kostants-partition-function-dr.-pamela-e.-harris"
+class="section level3">
+<h3><em>Multiplex juggling sequences and Kostant’s partition
+function</em>, Dr. Pamela E. Harris</h3>
+<blockquote>
+<p>Multiplex juggling sequences are generalizations of juggling
+sequences (describing throws of balls at discrete heights) that specify
+an initial and terminal configuration of balls and allow for multiple
+balls at any particular discrete height. Kostant’s partition function is
+a vector function that counts the number of ways one can express a
+vector as a nonnegative integer linear combination of a fixed set of
+vectors. What do these two families of combinatorial objects have in
+common? Attend this talk to find out!</p>
+</blockquote>
+</div>
+</div>
+<div id="saturday-evening" class="section level2">
+<h2>Saturday evening</h2>
+<div id="juggling-counts-dr.-steve-butler" class="section level3">
+<h3><em>Juggling Counts</em>, Dr. Steve Butler</h3>
+<blockquote>
+<p>Mathematics is a language which can help us describe and explore
+patterns. One source of patterns that mathematicians have been exploring
+comes from juggling (the tossing of objects, usually balls or clubs). In
+this talk we will look at multiple ways to describe juggling patterns
+that allow us to find new juggling patterns, and to count how many
+possible patterns exist. We can compare answers to various problems to
+give a combinatorial proof of Worpitzky’s identity. We will also look at
+a few juggling-based problems that mathematics has not yet succeeded in
+answering.</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="speaker-biographies" class="section level1">
+<h1>Speaker Biographies</h1>
+<div id="dr.-steve-butler" class="section level2">
+<h2>Dr. Steve Butler</h2>
+<p><img src="images/steve_butler.jpg" height="180" /></p>
+<blockquote>
+<p>Steve Butler is an award-winning teacher. He has given talks at
+numerous venues ranging from the AMS-MAA address at Mathfest 2021 to the
+Iowa State Fair and almost everything in between Steve particularly
+enjoys working with young researchers. He regularly participates in the
+Iowa State REU and maintains a listing of REU sites for students
+(mathreuprograms.org); he is also a lead organizer of the Graduate
+Research Workshop in Combinatorics (GRWC). Steve’s mathematics was
+heavily influenced by his mentors, Fan Chung and Ron Graham. His
+mathematical research includes spectral graph theory, shuffling,
+juggling, origami, tiling, Apollonian circle packings, parking
+functions, and more. In 2015, he became the 512th mathematician to have
+an Erdős number of 1. Steve Butler has been at Iowa State University
+since 2011 where he is a Morrill Professor and the Barbara J Janson
+Professor of Mathematics. More information about him can be found online
+(stevebutler.org).</p>
+</blockquote>
+</div>
+<div id="dr.-pamela-e.-harris" class="section level2">
+<h2>Dr. Pamela E. Harris</h2>
+<p><img src="images/PEHarris2023-004-scaled.jpg" height="180" /></p>
+<blockquote>
+<p>Dr. Pamela E. Harris is a Mexican-American mathematician and serves
+as Associate Professor of Mathematics at the University of
+Wisconsin-Milwaukee. She received her BS from Marquette University and
+MS and Ph.D. in mathematics from the University of Wisconsin-Milwaukee.
+Dr. Pamela E. Harris’s research is in algebraic combinatorics and she is
+the author of over 70 peer-reviewed research articles in internationally
+recognized journals. She is a Fellow of the American Mathematical
+Society and of the Association for Women in Mathematics. Dr. Harris is
+also an award-winning mathematical educator, receiving the 2022 MAA’s
+Haimo Award for Excellence in Mathematical Education, the 2020 MAA
+Northeast Section Award for Distinguished Teaching, the 2019 MAA Alder
+Award for Distinguished Teaching by a Beginning Mathematics Faculty
+Member, and the 2019 Council on Undergraduate Research Mathematics and
+Computer Sciences Division Early Career Faculty Mentor Award. She is the
+President and co-founder of Lathisms: Latinxs and Hispanics in the
+Mathematical Sciences, cohosts the podcast Mathematically Uncensored,
+and is a coauthor of the books Asked And Answered: Dialogues On
+Advocating For Students of Color in Mathematics, Practices, and
+Policies: Advocating for Students of Color in Mathematics and Read and
+Rectify: Advocacy Stories from Student of Color in Mathematics.</p>
+</blockquote>
+</div>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -312,6 +506,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
