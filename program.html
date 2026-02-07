@@ -29,9 +29,14 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -220,6 +225,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -227,6 +295,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -276,10 +354,383 @@ height="40" /> Program</h1>
 </div>
 
 
-<p>Details coming soon.</p>
+<h2>
+<span style="color: DarkGreen;">Thursday, April 16</span>
+</h2>
+<ul>
+<li>Project NExT Gathering at Two Dogs Taphouse</li>
+</ul>
+<div id="friday-april-17" class="section level1">
+<h1>Friday, April 17</h1>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Time
+</th>
+<th style="text-align:left;">
+Event
+</th>
+<th style="text-align:left;">
+Title
+</th>
+<th style="text-align:left;">
+Presenter
+</th>
+<th style="text-align:left;">
+Location
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+7:45 am
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Packet Pickup
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Jonasson Hall in Melrose
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+8:00 am - 2:30 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+PNW Section NExT Meeting
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Jonasson Hall in Melrose
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+3:00 - 5:30 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Minicourse
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+Creating Accessible and Interactive Materials
+</td>
+<td style="text-align:left;width: 4cm; ">
+Dr. Oscar Levin
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Graf 111
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+3:00 - 5:30 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Minicourse
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+Converting to a Standards-Based Syllabus
+</td>
+<td style="text-align:left;width: 4cm; ">
+Dr. Lisa Marano
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Graf 117
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+6:00 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Project NExT Dinner
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+location TBA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+6:45 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Registration
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Jonasson Hall in Melrose
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+6:00 - 7:30 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Games and Gathering
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Jonasson Hall in Melrose
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+7:30 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Invited Address
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+Every Game I’m Shufflin’, Shufflin’
+</td>
+<td style="text-align:left;width: 4cm; ">
+Dr. Steve Butler
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Nicholson Library (open to the public)
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="saturday-april-18" class="section level1">
+<h1>Saturday, April 18</h1>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Time
+</th>
+<th style="text-align:left;">
+Event
+</th>
+<th style="text-align:left;">
+Title
+</th>
+<th style="text-align:left;">
+Presenter
+</th>
+<th style="text-align:left;">
+Location
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+7:30- 8:30 am
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Executive Meetings
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Presidents’ Dining Room, Dillin Hall
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+8:00 am
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Registration
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Keck Atrium
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+9:00-10:00 am
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Welcome Address, and Invited Address
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+Mathematics and Community Engagement
+</td>
+<td style="text-align:left;width: 4cm; ">
+Dr. Lisa Marano
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Graf 120
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+10:15 am-12:10 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Contributed Talks
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+TBA
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+TBA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+12:15-1:45 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Lunch
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Keck Atrium
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+12:45-1:45 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Movie: Counted Out
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Graf 120, Open to Public
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+1:00-1:45 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Business Meeting
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Graf 111
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+2:00 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Invited Address
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+Multiplex juggling sequences and Kostant’s partition function
+</td>
+<td style="text-align:left;width: 4cm; ">
+Dr. Pamela E. Harris
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Graf 120
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+3:15-5:30 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Contributed Talks
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+TBA
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+TBA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+6:00 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Social Reception
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Keck Atrium
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+7:00 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Section Awards Ceremony
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+</td>
+<td style="text-align:left;width: 4cm; ">
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Graf 120
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; ">
+7:30 pm
+</td>
+<td style="text-align:left;width: 4cm; font-weight: bold;">
+Invited Address
+</td>
+<td style="text-align:left;width: 4cm; font-style: italic;">
+Juggling Counts
+</td>
+<td style="text-align:left;width: 4cm; ">
+Dr. Steve Butler
+</td>
+<td style="text-align:left;width: 3cm; font-style: italic;">
+Graf 120
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -312,6 +763,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
