@@ -8,28 +8,31 @@ h1.title {
   color: DarkGreen;
 }
 h1 { /* Header 1 */
-  font-size: 22px;
+  font-size: 24px;
   color: DarkGreen;
 }
 h2 { /* Header 2 */
-    font-size: 20px;
+    font-size: 22px;
       color: DarkRed;
 }
 h3 { /* Header 3 */
-  font-size: 18px;
-  color: DarkRed;
+  font-size: 20px;
+  color: Darkblue;
 }
-code.r{ /* Code block */
-    font-size: 15px;
+
+.session-title {
+  /*font-weight: bold;*/
+  color: DarkBlue;
+  font-size: 18px;
 }
 
 
 blockquote {
     padding: 10px 20px;
-    margin: 0 0 20px;
+    margin: 0 20px 20px;
     font-size: 15px;
     border-left: 1px solid #eee;
-    border-color: blue;
+    border-color: steelblue;
 }
 
 
